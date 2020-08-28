@@ -1,0 +1,17 @@
+<div class="container">
+<table class="table">
+  <tbody>
+    <tr>
+      <td><%=image_tag @blog.image.url,:class=>"img-fluid rounded mx-auto d-block",
+                                        :alt=>"Responsive image"%></td>
+    </tr>
+    <tr>
+      <td><%=@blog.content %></td>
+
+    </tr>
+    <tr>
+      <td><td><%= link_to "home", blogs_path%></td>
+    </tr>
+  </tbody>
+</table>
+</div>

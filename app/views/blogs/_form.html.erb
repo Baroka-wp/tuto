@@ -1,0 +1,11 @@
+<div class="container">
+  <div class="field">
+    <%= form_with(model:@blog,local: true) do |form| %>
+        <%= form.text_area :content,:class=>"form-control",
+                                      :id=>"exampleInputEmail1" %>
+        <%= form.file_field :image %>
+        <%= form.hidden_field :image_cache %>
+        <div class="actions"><%= form.submit "Post",:class=>"btn btn-primary"%></div>
+    <% end %>
+</div>
+</div>
